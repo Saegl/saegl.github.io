@@ -1,0 +1,9 @@
+Jinja2
+# Dev
+mypy
+ruff
+ruff-lsp
+pytest
+python-lsp-server
+pylsp-mypy
+
