@@ -25,3 +25,11 @@ for input_file in INPUT_DIR.rglob("*.html"):
 
     print(f"Generated {output_file}")
 
+for input_file in INPUT_DIR.rglob("*.css"):
+    relative_path = input_file.relative_to(INPUT_DIR)
+    output_file = OUTPUT_DIR / relative_path
+
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    output_file.write_text(input_file.read_text())
+    print(f"Copied {output_file}")
