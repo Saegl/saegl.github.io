@@ -1,0 +1,4 @@
+baseURL = 'https://saegl.github.io'
+languageCode = 'en-us'
+title = 'Saegl'
+theme = 'hugo-flex'
